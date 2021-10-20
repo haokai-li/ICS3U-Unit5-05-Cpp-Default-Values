@@ -2,7 +2,7 @@
 //
 // Created by: Haokai
 // Created on: Oct 2021
-// This Program calculate the volume of a cylinder
+// This Program is about address
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -16,7 +16,7 @@ std::string addressPart(std::string fullNameString,
                         std::string provinceString,
                         std::string postalCodeString,
                         int apartmentNumber = 0) {
-    // This Program calculate the volume of a cylinder
+    // This Program is about address
     std::string finalUpper;
 
     // process
