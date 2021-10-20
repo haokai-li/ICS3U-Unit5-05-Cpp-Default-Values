@@ -32,7 +32,7 @@ std::string addressPart(std::string fullNameString,
                      + cityString
                      + " "
                      + provinceString
-                     + " "
+                     + "  "
                      + postalCodeString;
     } else {
         finalUpper = fullNameString
@@ -44,7 +44,7 @@ std::string addressPart(std::string fullNameString,
                      + cityString
                      + " "
                      + provinceString
-                     + " "
+                     + "  "
                      + postalCodeString;
     }
 
@@ -122,7 +122,7 @@ main() {
         std::cout << addressFinal << std::endl;
     } catch (std::invalid_argument) {
         // output
-        std::cout << "You didn't enter an integer." << std::endl;
+        std::cout << "You have an error input." << std::endl;
     }
 
     std::cout << "\nDone." << std::endl;
