@@ -59,7 +59,7 @@ main() {
     std::string addressFinal;
     std::string userFullNameString;
     std::string userIfApartmentString;
-    std::string userApartmentString = "";
+    std::string userApartmentString;
     int userApartmentNumber;
     std::string userStreetString;
     int userStreetNumber;
@@ -78,7 +78,7 @@ main() {
     getline(std::cin, userFullNameString);
     std::cout << "Do you live in a apartment? (y/n): ";
     getline(std::cin, userIfApartmentString);
-    if (userIfApartmentString == "Y" || userIfApartmentString == "YES") {
+    if (userIfApartmentString == "y" || userIfApartmentString == "yes") {
         std::cout << "Enter your apartment number: ";
         getline(std::cin, userApartmentString);
     }
@@ -95,7 +95,7 @@ main() {
     std::cout << "" << std::endl;
 
     try {
-        if (userIfApartmentString == "Y" || userIfApartmentString == "YES") {
+        if (userIfApartmentString == "y" || userIfApartmentString == "yes") {
             userApartmentNumber = std::stoi(userApartmentString);
         }
         userStreetNumber = std::stoi(userStreetString);
